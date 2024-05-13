@@ -8,7 +8,7 @@ So soll es beispielsweise Mehrfachnennungen von Zutaten verstehen und Schreibfeh
 Nehmen Sie das Assignment auf Github Classroom an und wählen Sie Ihren Namen aus der Liste aus.
 Dadurch wird ein (dieses) Repository für Sie erstellt. 
 Klonen Sie das Repo und pushen Sie Ihre Lösungen in mehreren sinnvoll zusammengefassten Commits (z.B. einer pro Teilaufgabe, es können aber auch gerne mehr sein).
-Sie müssen Ihre Lösung bis zum 22. November um 23:59 Uhr gepusht haben, alle Tests müssen grün sein (und zwar nicht nur lokal, sondern auch auf GitHub im Tab "Actions"), und Sie müssen spätestens in der darauf folgenden von Ihnen belegten Übungsgruppe Ihre Lösung kurz demonstrieren.
+Sie müssen Ihre Lösung bis zum 26. Mai um 23:59 Uhr gepusht haben, alle Tests müssen grün sein (und zwar nicht nur lokal, sondern auch auf GitHub im Tab "Actions"), und Sie müssen spätestens in der darauf folgenden von Ihnen belegten Übungsgruppe Ihre Lösung kurz demonstrieren.
 
 ## Aufgabenstellung
 
