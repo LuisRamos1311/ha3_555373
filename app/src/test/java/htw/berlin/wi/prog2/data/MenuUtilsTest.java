@@ -47,6 +47,15 @@ class MenuUtilsTest {
     }
 
     @Test
+    @DisplayName("Input and return an empty Map")
+    void emptyMap() {
+        Map<String, Long> actual = MenuUtils.focusOnNameAndInvert(Map.of());
+        Map<String, Long> expected = Map.of();
+        assertEquals(expected, actual);
+    }
+
+
+    @Test
     @DisplayName("should get the ingredients from the passed menu in the stated quantities of the input map")
     void ingredientsFromIdAndCount() {
         Map<Long, Integer> counts = Map.of(
