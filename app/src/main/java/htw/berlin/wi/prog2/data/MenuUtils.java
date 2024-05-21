@@ -27,6 +27,14 @@ public class MenuUtils {
     }
 
     public static List<Ingredient> ingredientsFromIdAndCount(Map<Long, Integer> idsAndCount, Map<Long, Ingredient> articles) {
-        return List.of(); // TODO hier implementieren und korrekte Ergebnis-Liste zurückgeben
+
+        List<Ingredient> ingredientList = new ArrayList<>();
+
+        for(Map.Entry<Long,Integer> idAndCount : idsAndCount.entrySet()) {
+            for(int i=0;i<idAndCount.getValue();i++){
+                ingredientList.add(articles.get(idAndCount.getKey()));
+            }
+        }
+        return ingredientList; // TODO hier implementieren und korrekte Ergebnis-Liste zurückgeben
     }
 }

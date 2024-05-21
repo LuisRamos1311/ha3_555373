@@ -46,6 +46,7 @@ class MenuUtilsTest {
         assertEquals(expected, actual);
     }
 
+
     @Test
     @DisplayName("Input and return an empty Map")
     void emptyMap() {
@@ -64,6 +65,21 @@ class MenuUtilsTest {
 
         List<Ingredient> expected = List.of(kaese, fleisch, fleisch);
         List<Ingredient> actual = MenuUtils.ingredientsFromIdAndCount(counts, testMenu);
+
+        Comparator<Ingredient> byName = Comparator.comparing(Ingredient::getName);
+        List<Ingredient> expectedSorted = expected.stream().sorted(byName).collect(Collectors.toList());
+        List<Ingredient> actualSorted = actual.stream().sorted(byName).collect(Collectors.toList());
+
+        assertEquals(expectedSorted, actualSorted);
+    }
+
+    @Test
+    @DisplayName("Input and return an empty Map")
+    void emptyMap2() {
+        Map<Long, Integer> counts = Map.of();
+
+        List<Ingredient> expected = List.of();
+        List<Ingredient> actual = MenuUtils.ingredientsFromIdAndCount(counts, Map.of());
 
         Comparator<Ingredient> byName = Comparator.comparing(Ingredient::getName);
         List<Ingredient> expectedSorted = expected.stream().sorted(byName).collect(Collectors.toList());
