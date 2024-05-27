@@ -33,7 +33,7 @@ public class UIParserBuilderIntegrationTest {
         assertEquals("Auf Wiedersehen", ui.launch());
 
         String expectedQuestion =
-                "In Ordnung. Dein Burger mit [Mayo, Rindfleisch, Rindfleisch, Vollkorn] kostet 2.70 Euro. Willst du die Bestellung abschliessen?";
+                "In Ordnung. Dein Burger mit [Mayo, Rindfleisch, Rindfleisch, Vollkorn] kostet 2.7 Euro. Willst du die Bestellung abschliessen?";
 
         verify(input).ask(expectedQuestion);
     }

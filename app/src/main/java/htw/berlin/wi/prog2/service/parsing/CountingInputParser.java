@@ -5,6 +5,11 @@ import java.util.Map;
 
 public class CountingInputParser implements ExtendableInputParser {
 
+    //New Hash-Map
+    //First delete the blank-spaces and create a list of words
+    //Delete the commas and points
+    //If we find a word on the sentece that is on the map, we add it
+    //If the word was already added, we increase the value by +1
     @Override
     public Map<Long, Integer> idsAndCountFromInput(String inputLine, Map<String, Long> keywordsToIds) {
 

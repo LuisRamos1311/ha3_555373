@@ -5,6 +5,9 @@ import java.util.Map;
 
 public class TypoTolerantInputParser implements ExtendableInputParser {
 
+    //New HashMap
+    //Similar to the CountingInputParser class
+    //Added if scenarios for the different spellings
     @Override
     public Map<Long, Integer> idsAndCountFromInput(String inputLine, Map<String, Long> keywordsToIds) {
 

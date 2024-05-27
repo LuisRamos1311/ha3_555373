@@ -14,6 +14,7 @@ public class MenuUtils {
         return names;
     }
 
+    //For-Loop, New HashMap with Output: Name, Key
     public static Map<String, Long> focusOnNameAndInvert(Map<Long, Ingredient> articles) {
         Map<String, Long> map = new HashMap<>();
 
@@ -21,17 +22,17 @@ public class MenuUtils {
            
             map.put(art.getValue().getName(), art.getKey());
         }
-
-
         return map; // TODO hier implementieren und korrekte Ergebnis-Map zurückgeben
     }
 
+    //New ArrayList
+    //For-Loop to count the ingredients
     public static List<Ingredient> ingredientsFromIdAndCount(Map<Long, Integer> idsAndCount, Map<Long, Ingredient> articles) {
 
         List<Ingredient> ingredientList = new ArrayList<>();
 
         for(Map.Entry<Long,Integer> idAndCount : idsAndCount.entrySet()) {
-            for(int i=0;i<idAndCount.getValue();i++){
+            for(int i=0; i < idAndCount.getValue(); i++){
                 ingredientList.add(articles.get(idAndCount.getKey()));
             }
         }
